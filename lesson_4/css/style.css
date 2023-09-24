@@ -1,0 +1,61 @@
+@import url("reset.css");
+*{
+    color: #063714;
+}
+span{
+    color: aquamarine;  
+}
+/* p{
+    color: #0aae72;
+} */
+.yellow{
+    color: darkgoldenrod;
+}
+.list-1 a{
+    color: green;
+}
+
+#seychelles{
+    color: red;
+}
+header a{
+    color: orange;
+}
+.total{
+    color: grey;
+}
+p.list-2{
+    color: blue;
+}
+.list-1 > p{
+    color: darkorange;
+}
+                        
+.list-1 ~ p{
+    color: blueviolet;
+}
+
+.list-1 + p{
+    color: aqua;
+} 
+
+.list-1 > ul + p {
+    color: deeppink;
+}
+/* Селектори атрибутів*/
+
+[class*="__sublist"] {
+ color: indigo;
+}
+
+
+.list-5.list-5__sublist{
+    color: burlywood;
+}
+
+.list-5 .black-text{
+    color: black;
+}
+.list-6 .list{
+color: darkred;
+}
