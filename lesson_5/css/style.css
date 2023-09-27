@@ -1,0 +1,69 @@
+
+@import url("reset.css");
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+ /*Need to add Poppins font from google fonts plugin  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+ Піжключення вручну 
+@import url("fonts.css");
+
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;;
+}
+
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    
+}
+.title-project{
+    font-weight: 700;
+    font-size: 40px;
+}
+.sub-title{
+font-family: Poppins, sans-serif;
+font-size: 20px;
+font-weight: 400;
+color: #6B77E5;
+}
+.text{
+color: #7D7D7D; 
+text-align: justify;
+line-height: 147%;
+}
+.text-example{
+    font-weight: 400;
+}
+.text-example-decoration{
+    text-decoration: underline;
+}
+.title-example{
+    text-shadow: 10px -5px 2px #4e043f,
+    2px 5px 5px #000000;
+    font-weight: 700;
+}
+.title-example-transform{
+    text-transform: capitalize;
+    color: #8c0808;
+}
+.text-example-indent{
+    text-indent: 20px;
+}
+.text-example-spacing{
+    letter-spacing: 7px;
+}
+.text-example-white-space{
+    white-space: nowrap;
+    font-weight: 500;
+}
+[class*=-example]{
+color:violet;
+}
