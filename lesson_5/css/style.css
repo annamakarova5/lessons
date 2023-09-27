@@ -2,11 +2,13 @@
 @import url("reset.css");
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
- /*Need to add Poppins font from google fonts plugin  */
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
- Піжключення вручну 
-@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap');
+
+
+
+
+ /* Піжключення вручну 
+@import url("fonts.css"); */
 
 
 body{
