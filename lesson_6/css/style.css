@@ -1,0 +1,182 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap');
+/* Скидання стилів */
+@import url("reset.css");
+
+
+
+
+.header{
+background: #0E333D;
+padding: 20px 50px; 
+}
+li{
+text-transform: capitalize;
+}
+.header li{
+padding: 10px;
+display: inline-block;   
+}
+.header-container{
+max-width: 691px;
+margin: 0 auto;
+}
+body{
+font-family: "Inter", sans-serif;
+font-size: 18px;
+color: #7D7D7D;  
+}
+.consulting-sub-title
+.benefit-title
+.benefits-sub-title
+.consulting-title{
+font-family: Poppins, sans-serif;;
+}
+/* ======================================================== */
+/* --------------- consulting ----------------- */
+/* ======================================================== */
+.consulting-container{
+max-width: 722px;
+padding: 50px 15px;
+margin: 0 auto;
+}
+.image{
+max-width: 100%;
+}
+.consulting-image{
+margin-bottom: 37px;
+}
+.consulting-title{
+font-size: 30px;
+font-weight: 600;
+color: #37393F;
+line-height: 1.27 ;
+margin: 0px 0px 12px 0px; 
+}
+
+.consulting-sub-title{
+font-size: 20px;
+font-weight: 600;
+color: #6B77E5;
+margin-bottom: 12px;
+line-height: 1.27;
+}
+
+.text{
+margin: 0px 0px 40px 0px;
+line-height: 1.47;
+}
+.text p {
+margin-bottom: 15px;
+} 
+/* ======================================================== */
+/* --------------- benefits ----------------- */
+/* ======================================================== */
+.benefits {
+font-size: 0;
+margin-bottom: 48px;
+}
+.benefits-content{
+display: inline-block;
+width: 332px;
+font-size: 18px;
+}
+.benefits-image{
+width: 331px;
+margin-right: 29px;
+}
+
+.benefits-title{
+color: #37393F;
+font-size: 25px;
+font-weight: 600; 
+line-height: 1.27;
+margin-bottom: 15px; 
+}
+.benefits-sub-title {
+color: #40DDB6;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 21px;
+line-height: 1.27;
+}
+.benefits-list {
+color: #7D7D7D;
+margin-bottom: 35px;
+}
+
+/* ======================================================== */
+/* --------------- jewel ----------------- */
+/* ======================================================== */
+.jewel{
+background: #FFF9F4;
+padding: 50px 0;
+}
+
+.jewel-container{
+width: 1200px;
+padding: 0 10px;
+margin: 0 auto;
+/* font-size: 0; */
+}
+.jewel-content {
+display: inline-block;
+max-width: 563px;
+padding: 21px 0px;
+margin-right: 16px;
+}
+.jewel-upper-title {
+text-transform: uppercase;
+color: #D06B00;
+font-size: 28px;
+margin-bottom: 13px;
+padding: 15px 0px;
+}
+
+.jewel-title {
+color: #0E333D;
+font-family: DM Serif Text;
+font-size: 59px;
+line-height: 1.46;
+margin-bottom: 25px;
+}
+.jewel-text {
+font-size: 20px;
+color: #474747;
+
+}
+.jewel-container img {
+width: 273px;
+margin-left: 22px;
+font-size: 0;
+}
+
+/* ======================================================== */
+/* --------------- footer ----------------- */
+/* ======================================================== */
+.footer {
+background: #0E333D;
+padding: 30px;  
+}
+.footer-container {
+width: 1200px;
+margin: 0 auto;
+
+}
+.footer-content ul{
+}
+.footer-content li {
+padding: 12px;
+color: #DCDCDC;
+line-height: 1.80;
+font-size: 14px;
+}
+.footer-content ul {
+display: inline-block;
+width: 300px;
+vertical-align: top;
+}
+.footer-title{
+font-weight: 700;
+}
