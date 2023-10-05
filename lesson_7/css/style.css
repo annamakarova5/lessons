@@ -1,0 +1,289 @@
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+/* Пыдключення вручну */
+@import url("fonts.css");
+/* Скидання стилів */
+@import url("reset.css");
+
+
+body{
+font-family: "Inter", sans-serif;
+font-size: 18px;
+}
+main{
+padding: 50px 15px;
+max-width: 1218px;
+margin: 0 auto;
+}
+.licencing {
+padding: 50px 0px;
+}
+.licencing-container {
+
+}
+.licencing-main-title{
+text-align: center;
+}
+.licencing-main-title,
+.licencing-sub-title,
+.licencing-title {
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+}
+
+
+.square {
+width: 12px;
+height: 12px;
+background: #40DDB6;
+display: inline-block;
+}
+.licencing-main-title h6{
+color: #37393F;
+font-weight: 500;
+display: inline-block;
+margin-bottom: 16px;
+}
+.licencing-main-title h1 {
+color: #37393F;
+font-size: 60px;
+
+
+}
+.licencing-main-title{
+margin-bottom: 70px;
+
+}
+
+.licencing-title {
+color: #37393F;
+font-size: 40px;
+text-transform: capitalize;
+padding-bottom: 11px;
+
+}
+.text {
+color: #7D7D7D;
+line-height: 1.47;
+margin: 10px 0 24px 0;
+}
+
+.text p{
+margin: 0 0 20px 0;
+}
+
+.licencing-sub-title {
+color: #37393F;
+font-size: 30px;
+text-transform: capitalize;
+}
+.license{
+font-size: 30px;
+font-weight: 400;
+}
+.mint-color {
+color: #40DDB6;
+}
+
+.licencing-container-icon{
+margin-bottom:100px;
+}
+.licencing-container-photography {
+margin-bottom:100px;
+}
+
+.licencing-container-fonts {
+margin-bottom:100px;
+}
+
+/* Project */
+
+.project-container {
+padding: 0 0 50px 0;
+}
+
+.project-list {
+color: #7D7D7D;
+font-weight: 500;
+padding: 10px 18px;
+line-height: 1.46;
+}
+/* Euphoria */
+
+.euphoria-container {
+max-width: 1248px;
+padding: 0 0 50px 0;
+}
+.euphoria-border {
+width: 6px;
+height: 28px;
+border-radius: 10px;
+background: #8A33FD;
+display: inline-block;
+margin: 0 10px -5px -20px;
+}
+.euphoria-title,
+.euhoria-sub-title{
+font-family: "Core Sans C";
+font-weight: 600;
+}
+.euphoria-title h2{
+color: #3C4242;
+font-size: 28px;
+margin-bottom: 30px;
+display: inline-block;
+}
+.euphoria-sub-title {
+color: #807D7E;
+font-size: 20px;
+margin-bottom: 25px;
+
+}
+
+.euphoria-text {
+color: #807D7E;
+font-family: Causten;
+font-size: 20px;
+line-height: 33.5px;
+}
+.euphoria-text p{
+margin-bottom: 20px;
+}
+
+/* Jewellery */
+.jewellery {
+margin-bottom: 50px;
+}
+.jewellery-container{
+max-width: 1105px;
+padding: 0 0 50px 0;
+font-size: 0;
+}
+.jewellery-content{
+max-width: 503px;
+display: inline-block;
+margin-right: 75px;
+padding: 70px 0;
+font-size: 16px;
+}
+.jewellery-title h6,
+.jewellery-title h2,
+.jewellery-text p{
+font-family: "Cormorant Infant";
+font-weight: 700;
+}
+
+.jewellery-title h6{
+color: #D58417;
+
+font-size: 20px;
+
+line-height: 1;
+text-transform: uppercase;
+margin-bottom: 27px;
+}
+.jewellery-title h2{
+color: #000;
+font-size: 64px;
+text-transform: capitalize;
+line-height: 1;
+}
+.jewellery-title{
+margin-bottom: 31px;
+}
+.jewellery-text p{
+color: #606060;
+font-size: 30px;
+line-height: 1.40;
+}
+
+.jewellery-image-1 img{
+margin-left: -11px;
+padding-top: 14px;
+
+}
+.jewellery-image-2 img{
+margin-left: -11px;
+padding-top: 19px;
+
+}
+.jewellery-image-1 {
+width: 177px;
+height: 336px;
+margin-right: 25px;
+
+}
+.jewellery-image-2 {
+width: 308px;
+height: 506px;
+
+}
+.jewellery-image-wrap{
+border-radius: 235px;
+border: 1px solid #502203;
+display: inline-block;
+vertical-align: top;
+}
+
+/* Practic */
+.practic {
+}
+.practic-container {
+
+}
+.practic-content {
+padding: 15px;
+border: 2px solid green;
+
+}
+.paragraph p {
+padding: 10px;
+box-shadow: inset 5px 5px 25px gray;
+}
+.list li {
+padding: 10px;
+margin: 5px;
+border: 2px dotted greenyellow;
+}
+.list ul{
+border: 3px dashed burlywood ;
+}
+.img{
+padding: 15px 0;
+margin: 25px 0;
+display: inline-block;
+max-width: 1200px;
+border-bottom: 1px double magenta;
+border-right: 2px solid blue;
+border-left: 4px solid #40DDB6;
+border-top: 1px solid #000;
+}
+.image1,
+.image2,
+.image3 {
+    display: inline-block;
+    padding: 10px;
+    border-right: 5px solid #D58417;
+}
+.image1 {
+border-left: 1px solid #0b0d0d;
+box-shadow: 15px 25px 15px#33423e;
+}
+.image2 {
+box-shadow: inset 25px 15px 35px #37393F;
+}
+.image3 {
+    box-shadow: 15px 15px 15px #37393F; 
+}
+.shape{
+width: 900px;
+height: 300px;
+border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%  ;
+background: red;
+display: inline-block;
+border: 3px double black;
+box-shadow: 15px 15px 15px black;
+margin: 20px 0;
+}
