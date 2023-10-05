@@ -227,13 +227,18 @@ display: inline-block;
 vertical-align: top;
 }
 
-/* Practic */
-.practic {
+/* practice */
+.practice h2{
+font-size: 60px;
+text-align: center;
+text-shadow: 5px 5px 7px  #000;
+text-transform: capitalize;
 }
-.practic-container {
+.practice-container {
 
 }
-.practic-content {
+.practice-content {
+    margin: 10px 0;
 padding: 15px;
 border: 2px solid green;
 
