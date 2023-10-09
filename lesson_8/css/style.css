@@ -1,0 +1,360 @@
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+/* Пыдключення вручну */
+@import url("fonts.css");
+/* Скидання стилів */
+@import url("reset.css");
+
+main{
+font-family: "Inter",sans-serif;
+
+}
+header{
+background-color: antiquewhite;
+}
+.navigation{
+max-width: 1900px;
+padding: 30px;
+text-transform: capitalize;
+margin: 0 auto;
+}
+.navigation li{
+border: 1px solid black;
+border-radius: 20px;
+display: inline-block;
+padding: 10px;
+background-color: #b09b67;
+margin: 20px;
+font-size: 20px;
+}
+
+/* Practice */
+.practice {
+max-width: 1900px;
+margin: 0 auto;
+}
+.practice-container {
+}
+.text-practice {
+background-image: url("../img/pattern_text.jpg") ;
+background-repeat: round;
+background-size: 100%;
+}
+.text-practice p{
+min-height: 100px;
+padding: 20px;
+border: 2px solid red;
+border-radius: 50px;
+margin: 20px;
+box-shadow: 2px 2px 9px black;
+}
+.bg1 p {
+background: linear-gradient(90deg, rgba(206,206,221,1) 0%, rgba(121,9,80,1) 35%, rgba(0,212,255,1) 100%);
+}
+.bg2 p{
+background-color: antiquewhite;
+}
+.bg3 p{
+background: url(../img/black-waves.png) 50% 50% no-repeat fixed,
+url(../img/red-wawes.png)0 80px / 100px no-repeat,
+linear-gradient(90deg, rgba(206,206,221,1) 0%, rgba(244,247,215,1) 35%, rgba(210,238,244,1) 100%); ;
+}
+.bg4 p{
+background: url(../img/red-wawes.png)center / 50% no-repeat,
+url(../img/black-waves.png) 100% 50% no-repeat,
+url(../img/black-waves.png) 0 50% no-repeat;
+}
+
+/* Consalting Whitecollar */
+.consulting {
+max-width: 673px;
+font-size: 18px;
+margin: 0 auto;
+padding: 20px;
+}
+.consulting-container {
+margin-bottom: 50px;
+}
+.upper-title{
+max-width: 415px;
+margin-bottom: 20px;
+}
+
+.consulting-upper-title {
+color: #37393F;
+font-weight: 500;
+margin-bottom: 15px;
+text-transform: capitalize;
+}
+.consulting-upper{
+display: inline-block;
+}
+.square {
+width: 12px;
+height: 12px;
+background-color: #40DDB6;;
+display: inline-block;
+margin-right: 6px;
+}
+.consulting-title {
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+}
+.project-tittle-wrapper h6{
+font-size: 16px;
+font-family: "Inter";
+}
+.consulting-title {
+color: #37393F;
+line-height: 1.2;
+font-size: 40px;
+text-transform: capitalize;
+}
+.text{
+color: #7D7D7D;
+line-height: 1.4;
+}
+.text p{
+margin-bottom: 15px;
+}
+.consulting-list {
+}
+.consulting-list li{
+background: url(../img/check.jpg) 0 3px no-repeat;
+min-height: 30px;
+color: #37393F;
+font-size: 20px;
+line-height: 1.65;
+margin-bottom: 23px;
+padding: 0 0 0 35px;
+}
+.consulting-box-wrapper {
+margin: 43px 0 37px 0;
+}
+.consulting-box1,
+.consulting-box2 {
+max-width: 300px;
+display: inline-block;
+}
+.consulting-box-content {
+padding: 31px 32px 32px 91px;
+border: 1px solid #7D7D7D;
+}
+
+.consulting-box-content p {
+color: #7D7D7D;
+font-size: 16px;
+line-height: 1.3;
+}
+.subtitle {
+color: #37393F;
+font-family: "Poppins";
+font-size: 20px;
+font-weight: 600;
+line-height: 1.2;
+}
+.consulting-box1{
+margin-right: 21px;
+}
+.consulting-box1 {
+background: url(../img/icon-experience.jpg) 31px 31px no-repeat;
+}
+.consulting-box2 {
+background: url(../img/icon-winner.jpg) 31px 31px no-repeat;
+}
+.consulting-button {
+background-color: #6B77E5;
+width: 184px;
+height: 65px;
+padding: 21px 27px 22px 27px;
+font-weight: 600;
+text-transform: capitalize;
+color: #FFF;
+}
+/* Consulting Project */
+.consulting-project{
+margin-bottom: 50px;
+}
+.consulting-project-container{
+max-width: 1250px;
+margin: 0 auto;
+}
+
+.project-tittle {
+margin-bottom: 14px;
+}
+.project-tittle-wrapper{
+margin-bottom: 47px;
+text-align: center;
+}
+
+/* Consulting Project - cards */
+.cards-wrapper{
+
+}
+.card {
+max-width: 385px;
+margin-right: 28px;
+display: inline-block;
+
+}
+.cards-wrapper{
+margin-bottom: 15px;
+}
+.card-image{
+min-width: 385px;
+min-height: 500px;
+margin-bottom: 24px;
+display: inline-block;
+
+}
+
+.card-subtitle-wrapper {
+margin-bottom: 10px;
+}
+.card-text {
+font-size: 14px;
+color: #7D7D7D;
+background: url(../img/square-check.jpg) 0 0 no-repeat;
+padding: 0 0 0 25px;
+min-height: 25px;
+line-height: 1.46;
+}
+
+.image1 {
+background: url(../img/card-1.jpg);
+}
+.image2 {
+background: url("../img/card-2.jpg");
+}
+.image3 {
+background: url("../img/card-3.jpg");
+}
+.image4 {
+background: url(../img/card-4.jpg);
+}
+.image5 {
+background: url("../img/card-5.jpg");
+}
+.image6 {
+background: url("../img/card-6.jpg");
+}
+.card-row-wrapper{
+margin-bottom: 58px;
+text-align: left;
+font-size: 0;
+}
+
+/* Euphoria */
+.euphoria,
+.euphoria-pics {
+font-family: "Causten";
+font-size: 20px; 
+ 
+}
+.euphoria-container {
+max-width: 1250px;
+margin: 0 auto;
+}
+.euphoria-title,
+.euphoria-subtitle,
+.pics-title {
+font-family: "Core Sans C";
+}
+.euphoria-title{
+margin-bottom: 30px;
+}
+.euphoria-title h4{
+display: inline-block;  
+font-size: 28px;
+font-weight: 600;
+line-height: 1.17;
+color: #3C4242;
+vertical-align: top;   
+padding-left: 5px;
+}
+
+.rectangle {
+width: 6px;
+height: 28px;
+border-radius: 10px;
+background: #8A33FD;
+display: inline-block;
+margin-left: -16px;
+}
+.euphoria-subtitle {
+color: #807D7E;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 25px;
+}
+.euphoria-text {
+color: #807D7E;
+line-height:1.65;
+margin-bottom: 25px;
+}
+.euphoria-text p{
+margin-bottom: 20px;
+}
+.bold{
+font-weight: 700;
+}
+/* Euphiria pictures */
+
+.euphoria-pics {
+
+}
+.euphoria-pics-container {
+max-width: 1250px;
+margin: 0 auto;
+font-size: 0;
+padding-bottom: 50px;
+}
+.pics-1 {
+max-width: 614px;
+min-height: 640px;
+
+padding: 183px 74px 174px 74px;
+display: inline-block;
+}
+.pics-2 {
+max-width: 626px;
+min-height: 640px;
+width: 100%;
+vertical-align: top;
+display: inline-block;
+
+
+}
+.pics-1 {
+background: url(../img/pics-1.jpg)center/ cover no-repeat;
+}
+.pics-2{
+background: url(../img/pics-2.jpg)center/ cover no-repeat; 
+}
+.pics-title {
+color: #FFF;
+font-size: 34px;
+font-weight: 800;
+line-height: 1.4;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+.pics-text {
+color: #FFF;
+font-weight: 300;
+line-height: 1.2;
+margin-bottom: 50px;
+font-size: 20px;
+}
+.pics-button {
+border-radius: 8px;
+background: #FFF;
+display: inline-block;
+padding: 12px 44px;
+align-items: center;
+font-size: 18px;
+text-transform: capitalize;
+}
