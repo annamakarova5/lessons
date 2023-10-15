@@ -1,0 +1,588 @@
+/* Підключення шрифтів */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+font-family: "Inter", sans-serif;
+font-weight: 18px;
+}
+/* ========= navigation =========== */
+.navigation{
+background-color: #F4F4F4;
+display: inline-block;
+text-transform: capitalize;
+width: 100%;
+}
+.lesson,
+.navigation li{
+display: inline-block;
+border: 1px solid black;
+border-radius: 10px;
+padding: 10px;
+margin: 10px;
+}
+.nav-list,
+.lesson{
+display: inline-block;
+}
+.lesson{
+margin-right: 20% ;
+}
+
+.navigation * :hover,
+h1:hover{
+background-color: #7D7D7D;
+}
+
+footer {
+background-color: #F4F4F4;
+width: 100%;
+height: 90px;
+display: inline-block;
+text-align: center;
+}
+footer p{
+font-weight: 700;
+font-size: 30px;
+padding: 25px;
+display: inline-block;
+border: 1px solid black;
+background-color: #a09b9b;
+border-radius: 10px;
+box-shadow: 2px 2px 5px  black;
+margin: 5px;
+}
+footer p:hover{
+text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+/* ================================== */
+/* ========== Practice ============== */
+.hover__container,
+.pseudoel__container{
+max-width: 1250px;
+margin: 0 auto;
+padding: 20px;
+}
+.link:hover {
+color: blueviolet;
+border-bottom: 3px dashed;
+background-color: aquamarine;
+}
+
+.active:active{
+color: whitesmoke;
+border-bottom: 3px dotted;
+background-color: rgb(255, 127, 255);
+}
+
+.focus:focus{
+color: brown;
+border: 3px solid red;
+}
+
+
+.visited{
+color:blue;
+border: none;
+}
+.visited:visited {
+color: grey;
+}
+.open-target{
+background-color: aqua;
+color: white;
+}
+.target{
+background: linear-gradient(90deg, rgba(206,206,221,1) 0%, rgba(244,247,215,1) 35%, rgba(210,238,244,1) 100%);
+width: 400px;
+height: 400px;
+visibility: hidden;
+
+}
+.target:target{
+visibility: visible;
+border: 3px solid purple;
+}
+
+.pseudoel {
+}
+.pseudoel__container {
+    
+}
+.text p{
+margin-bottom: 15px;
+}
+.text p:not(:last-child) {
+margin-bottom: 15px;
+}
+.text p:first-of-type{
+background-color: aquamarine;
+opacity: 0.3;
+}
+.pseudo_list{
+display: inline-block;
+text-align: center;
+}
+.pseudo_list li{
+border: 1px solid black;
+padding: 10px 10px 15px 10px;
+margin: 10px;
+border-radius: 5px;
+
+}
+
+.pseudo_list li:before{
+background: url(../img/check.png) left /contain no-repeat;
+content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+}
+
+.pseudo_list li:nth-child(odd){
+background-color: antiquewhite;
+}
+.pseudo_list li:hover{
+background-color: pink;
+}
+/*=================================================*/
+/* ==============Game============================ */
+
+.general-block-game {
+padding-top: 50px;
+padding-left: 50px;
+padding-right: 50px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.game {
+padding: 30px;
+max-width: 1200px;
+}
+.line-start,
+.line-6{
+background: red;
+}
+.line-start {
+width: 40px;
+height: 40px;
+}
+.line-1,
+.line-2,
+.line-3,
+.line-4,
+.line-5{
+	background-color: blue;
+}
+
+.line-1 {
+width: 640px;
+height: 40px;
+visibility: hidden;
+}
+
+.line-2 {
+height: 200px;
+width: 40px;
+margin-left: 600px;
+visibility: hidden;
+}
+
+.line-3{
+width: 140px;
+height: 40px;
+margin-left: 500px;
+visibility: hidden;
+}
+
+.line-4 {
+height: 200px ;
+width: 40px;
+margin-left: 500px;
+visibility: hidden;
+}
+.line-5 {
+height: 20px ;
+width: 540px;
+margin-left: 0px;
+visibility: hidden;
+}
+
+.line-6 {
+height: 30px;
+width: 30px;
+margin-left: 0px;
+visibility: hidden;
+}
+
+.congradulations {
+margin-left: 0px;
+visibility: hidden;
+}
+
+.line-start:hover ~ .line-1 {
+visibility: visible;
+}
+.line-1:hover {
+	visibility: visible;
+}
+
+.line-1:hover ~ .line-2 {
+	visibility: visible;
+}
+
+.line-2:hover {
+	visibility: visible;
+}
+
+.line-2:hover ~ .line-3 {
+	visibility: visible;
+}
+
+.line-3:hover {
+	visibility: visible;
+}
+
+.line-3:hover ~ .line-4 {
+	visibility: visible;
+}
+
+.line-4:hover {
+	visibility: visible;
+}
+
+.line-4:hover ~ .line-5 {
+	visibility: visible;
+}
+
+
+.line-5:hover {
+	visibility: visible;
+}
+
+.line-5:hover ~ .line-6 {
+	visibility: visible;
+}
+
+
+.line-6:hover {
+	visibility: visible;
+}
+
+.line-6:hover ~ .congradulations {
+	visibility: visible;
+}
+/* =============================== */
+/* ========= Consulting - Benefits #1 */
+.consulting {
+margin-bottom: 75px;
+}
+.consulting__container {
+max-width: 692px;
+margin: 0 auto;
+}
+.consulting__title,
+.consulting__subtitle,
+.benefits__title,
+.benefits__subtitle,
+.business__title,
+.business__subtitle {
+font-family: "Poppins",sans-serif;
+}
+
+.consulting__title {
+color: #37393F;
+font-size: 30px;
+font-weight: 600;
+line-height: 1.46;
+margin-bottom: 3px;
+}
+.consulting__text {
+color: #7D7D7D;
+line-height: 1.46;
+margin-bottom: 40px;
+}
+p{
+margin-bottom: 16px;
+}
+p:last-child{
+margin-bottom: 0;
+}
+.consulting__subtitle {
+color: #6B77E5;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 12px;
+}
+.benefits {
+}
+.benefits__wrapper {
+margin-bottom: 50px;
+}
+.benefits__image {
+max-width: 398px;
+max-height: 265px ;
+display: inline-block;
+margin-right: 29px;
+}
+.benefits__image:hover{
+box-shadow: 2px 2px 7px  black;
+}
+.benefits__content {
+display: inline-block;
+max-width: 320px;
+vertical-align: top;
+}
+.benefits__title {
+color: #37393F;
+font-size: 25px;
+font-weight: 600;
+line-height: 1.46;
+}
+.benefits__subtitle {
+color: #40DDB6;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 21px;
+}
+.benefits__list {
+color: #7D7D7D;
+display: inline-block;
+}
+.benefits__list li::before{
+background: url(../img/violet-check.jpg) 0 0 no-repeat;
+height: 29px;
+width: 27px;
+content: "";
+padding-left: 36px;
+vertical-align: middle;
+display: inline-block;
+}
+.benefits__list li:hover::before{
+opacity: 0.5;
+}
+.benefits__list li{
+margin-bottom: 30px;
+}
+.benefits__list li:last-child{
+margin-bottom: 0;
+}
+/*=================================================*/
+/* Consulting Business #2 */
+.business {
+margin-bottom: 75px;
+}
+.business__container {
+max-width: 675px;
+margin: 0 auto;
+}
+.business__uppertitle {
+color: #37393F;
+font-weight: 500;
+margin-bottom: 16px;
+}
+
+.square::before{
+content: "";
+width: 12px;
+height: 12px;
+background-color: #40DDB6;
+padding-left: 6px;
+display: inline-block;
+}
+.business__title {
+color: #37393F;
+font-size: 40px;
+font-weight: 700;
+line-height: 1.21;
+margin-bottom: 10px;
+text-transform: capitalize;
+}
+.business__text {
+margin-bottom: 48px;
+}
+.block__text{
+padding-left: 50px;
+}
+.block__text:last-child{
+margin-bottom: 0;
+}
+.business__block__1{
+margin-bottom: 31px;
+}
+.business__block__2{
+margin-bottom: 48px;
+}
+.business__block__1,
+.business__block__2 {
+border: 1px solid #E3E3E3;
+padding: 28px 41px 28px 38px;
+}
+.business__block__2:hover{
+background-color: ghostwhite;
+}
+.business__block__1:hover{
+background-color: ghostwhite;
+}
+.business__subtitle {
+color: #37393F;
+font-size: 20px;
+font-weight: 600;
+line-height: 1.2;
+margin-bottom: 12px;
+}
+.business__subtitle:before {
+content: "";
+background: url(../img/violet-check.jpg);
+width: 28px;
+height: 28px;
+margin-right: 19px;
+
+}
+.business__subtitle:hover::before{
+opacity: 0.5;
+}
+
+.business__button {
+max-width: 200px;
+max-height: 65px;
+background-color: #6B77E5;
+padding: 21px 35px 22px 35px;
+text-align: center;
+color: #FFF;
+font-weight: 600;
+}
+.business__button:hover{
+scale: 120%;
+border-radius: 10px;
+}
+/*=================================================*/
+/* 3 Work */
+.work {
+}
+.work__container {
+text-align: center;
+margin-bottom: 75px;
+}
+.work__main__title{
+margin-bottom: 41px;
+
+}
+.work__title{
+margin-bottom: 16px;
+}
+.work__wrapper {
+display: inline-block;
+font-size: 0;
+}
+.work__block img{
+margin-top: -94px;
+}
+.work__block {
+display: inline-block;
+max-width: 386px;
+max-height: 301px;
+padding: 58px 43px;
+background: #F4F4F4;
+}
+.work__block:not(:last-child){
+margin-right: 31px;
+}
+.work__block:hover{
+box-shadow: 2px 2px 7px  black;
+}
+.benefits__title {
+}
+.work__text {
+color: #7D7D7D;
+margin-bottom: 37px;
+font-size: 18px;
+line-height: 1.46;
+}
+.work__link{
+color: #6B77E5;
+font-weight: 600;
+text-transform: capitalize;
+font-size: 18px;
+}
+.work__link:hover{
+text-decoration: underline;
+}
+/*=================================================*/
+/* 4 Jewels */
+.jewels{
+
+}
+.jewels__container {
+max-width: 1225px;
+margin: 0 auto;
+}
+.jewels__title,
+.description,
+.jewels__subtitle{
+font-family: "Cormorant Infant", sans-serif;;
+}
+.jewels__title {
+color: #000;
+font-size: 60px;
+font-weight: 700;
+line-height: 1.15;
+max-width: 488px;
+text-transform: capitalize;
+}
+.jewels__title::after{
+content: "";
+border-bottom: 3px solid #78473B;
+width: 80%;
+}
+.jewels__image{
+width: 334px;
+height: 381px;
+padding: 10px 0  0 10px;
+}
+.jewels__image:hover{
+padding: 0;
+}
+.jewels__image__wrap{
+width: 334px;
+height: 381px;
+border: 1px solid #000;
+}
+.jewels__image__wrap{
+margin-bottom: 34px;
+}
+.description {
+font-size: 24px;
+font-weight: 700;
+line-height: 1.4;
+text-transform: capitalize;
+}
+/* .description:hover{
+text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+} */
+.jewels__subtitle {
+font-size: 46px;
+font-weight: 700;
+line-height: 1.13;
+max-width: 339px;
+}
+.jewels__subtitle{
+margin-bottom: 31px;
+}
+.description p{
+margin-bottom: 4px;
+}
+.section-1,
+.section-2,
+.section-3{
+display: inline-block;
+vertical-align: middle;
+}
+.section-2{
+margin-right: 55px;
+}
