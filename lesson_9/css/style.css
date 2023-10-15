@@ -8,7 +8,7 @@
 /* Основні стилі */
 body {
 font-family: "Inter", sans-serif;
-font-weight: 18px;
+font-size: 18px;
 }
 /* ========= navigation =========== */
 .navigation{
@@ -59,6 +59,9 @@ margin: 5px;
 footer p:hover{
 text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
+
+
+
 /* ================================== */
 /* ========== Practice ============== */
 .hover__container,
@@ -108,11 +111,6 @@ visibility: visible;
 border: 3px solid purple;
 }
 
-.pseudoel {
-}
-.pseudoel__container {
-    
-}
 .text p{
 margin-bottom: 15px;
 }
@@ -458,7 +456,7 @@ color: #FFF;
 font-weight: 600;
 }
 .business__button:hover{
-scale: 120%;
+
 border-radius: 10px;
 }
 /*=================================================*/
