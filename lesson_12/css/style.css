@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@600&display=swap');
+
+
+/* Скидання стилів */
+@import url("reset.css");
+
+
+body{
+font-family: "Inter", sans-serif;
+font-size: 18px;
+color: black;
+}
+.header {
+background-color: darkgray;
+padding: 15px;
+color: aqua;
+display: inline-block;
+}
+.header-fix {
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+display: inline-block;
+z-index: 55;
+}
+
+.header__container,
+.body__container{
+max-width: 1281px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.logo {
+margin-right: 150px;
+
+}
+.logo-img {
+max-width: 100%;
+
+}
+.menu {
+display: inline-block;  
+}
+.menu__item {
+display: inline-block;
+position: relative;
+padding: 15px;
+width: 150px;
+}
+.menu__link{
+display: inline-block;
+}
+.menu__link::after{
+background: url(../img/arrow.svg) center/cover no-repeat;
+content: "";
+width: 10px;
+height: 10px;
+position: absolute;
+top: 40%;
+left: 80%;
+}
+.menu__item:hover .menu__link::after{
+transform: rotate(90deg);
+}
+
+.sub-menu {
+position: absolute;
+left: 0;
+top: 100%;
+visibility: hidden;
+
+}
+.sub-menu__item{
+display: inline-block;
+padding: 10px 15px;
+width: 150px;
+}
+.menu__item,
+.sub-menu__item,
+.sub-sub-menu__item{
+background-color: black;
+border: 1px solid aqua;
+}
+
+
+
+.sub-menu__item {
+position: relative;
+display: inline-block;
+}
+.sub-menu__link {
+
+}
+.sub-sub-menu {
+position: absolute;
+top: 0;
+left: 100%;
+visibility: hidden;
+}
+.sub-sub-menu__item {
+width: 150px;
+padding: 10px 15px;
+}
+.sub-sub-menu__link {
+display: block;
+}
+
+/* visability */
+.menu__item:hover .sub-menu{
+visibility: visible;
+}
+.sub-menu__item:hover .sub-sub-menu{
+visibility: visible;
+}
+
+.sub-sub-menu__item,
+.sub-menu__item:hover{
+background-color:  rgb(47, 45, 45);
+}
+.menu__item:hover{
+   background-color: rgb(47, 45, 45);
+}
+
+[class*="__link"]:hover{
+text-decoration: underline;  
+}
+
+/* Body */
+.body{
+position: relative;
+
+}
+.body__container{
+font-size: 0;
+}
+.body__top{
+margin-bottom: 30px;
+}
+.side-menu{
+position: sticky;
+top: 80px;
+left: 0;
+width: 200px;
+font-size: 18px;
+display: inline-block;
+vertical-align: top;
+}
+.side-menu__item,
+.sub-side-menu__item {
+border: 1px solid black;
+background-color: rgb(169, 217, 224);
+
+}
+.side-menu__item {
+padding: 10px;
+position: relative;
+}
+
+
+
+.side-menu__link {
+position: relative;
+}
+
+.side-menu__link--icon::after{
+content: "";
+width: 0;
+height: 0;
+left: 155px;
+top: 2px;
+position: absolute;
+display: inline-block;
+border-style: solid;
+border-width: 7px 0 7px 15px;
+border-color: transparent transparent transparent #888c8f;
+}
+
+
+.side-menu__item:hover .side-menu__link--icon::after{
+transform:rotate(90deg);
+}
+.sub-side-menu {
+position: absolute;
+top: 0;
+left: 100%;
+
+width: 200px;
+visibility: hidden;
+}
+
+.sub-side-menu__item {
+visibility: hidden;
+padding: 10px;
+}
+.side-menu__item:hover .sub-side-menu__item{
+visibility: visible;
+}
+.sub-side-menu__item,
+.side-menu__item:hover{
+background-color: rgb(195, 242, 226);
+}
+.sub-side-menu__link {
+/* display: block; */
+}
+.right-section{
+display: inline-block;
+width: 500px; 
+
+}
+
+.pattern-image {
+max-width: 100%;
+
+}
+
+.img-pattern{
+padding-top: 80px;
+}
+
+/* pictures hover */
+.picture {
+    
+}
+.picture__container {
+    
+}
+.picture__item {
+max-width: 386px;
+min-height: 532px;
+position: relative;
+display: inline-block;
+}
+.item {
+margin: 0 31px 31px 0;
+}
+.item__image {
+width: 100%;
+
+}
+.item__image::after{
+    content: "";
+    /* display: inline-block; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 386px;
+    height: 532px;
+    background-color: #6b77e5;
+    opacity: 0.7;
+    z-index: 1;
+    visibility: hidden;
+   
+}
+
+.picture__item:hover .social-item,
+.picture__item:hover .item__image::after{
+visibility: visible;
+}
+
+.social-item {
+position: absolute;
+top: 250px;
+left: 107px;
+z-index: 2;
+visibility: hidden;
+vertical-align: middle;
+}
+
+.social-item__link:not(:last-child){
+margin-right: 13px;
+}
+.item__note {
+text-align: center;
+width: 341px;
+padding: 24px 69px;
+background-color: #FFF;
+position: absolute;
+top: 396px;
+left: 22px;
+z-index: 5;
+}
+.item__title {
+color: #37393F;
+font-family: Poppins;
+font-size: 25px;
+font-weight: 600;
+}
+.item__text {
+color: #7D7D7D;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.35;
+}
