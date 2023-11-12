@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Poppins:wght@600&display=swap');
+
+
+/* Скидання стилів */
+@import url("reset.css");
+
+
+body{
+font-family: "Inter", sans-serif;
+font-size: 18px;
+color: black;
+
+}
+p{
+text-align: center;
+}
+.wrapper {
+max-width: 1250px;
+overflow: clip;
+}
+.car-preview{
+text-align: center;
+display: block;
+}
+.car-image-preview{
+width: 300px;
+
+}
+.car-image-preview:hover{
+transform: scale(1.5);
+}
+
+
+
+
+.practice {
+
+}
+.practice__container {
+    
+}
+.paractice__title {
+font-size: 35px;
+color: grey;
+margin-bottom: 20px;
+text-align: center;
+}
+.paractice__sub-title{
+font-size: 25px;
+margin-bottom: 20px;
+text-align: center;
+}
+.practice__2d {
+
+}
+.block {
+width: 200px;
+height: 200px;
+background-color: grey;
+margin: 70px;
+display: inline-block;
+}
+.block__item {
+width: 170px;
+height: 170px;
+background-color:rgb(5, 211, 211);
+/* text-align: center; */
+padding-top: 30%;
+}
+.block__item--1:hover{
+transform: translate(20px, 30%);
+}
+.block__item--11:hover{
+transform: translateX(80%) 
+}
+.block__item--12:hover{
+transform: translateY(50%) 
+}
+.block__item--2:hover{
+transform: scale(0.5);
+}
+.block__item--3:hover{
+transform: rotate(30deg) scale(0.9);
+transform-origin: 0 0;
+}
+.block__item--4:hover{
+transform: skew(-10deg, 50deg) translate(20%, -30%);
+}
+.block__item--41{
+transform: scale(1.2);
+
+}
+
+.block__item--41 p{
+position: relative;
+font-size: 17px;
+
+}
+.block__item--41::before{
+transform: skew(30deg, 0deg) scale(0.7);
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgb(217, 221, 187);
+}
+.block__item--41:hover::before{
+transform: skew(-20deg, 0deg) scale(0.7);
+}
+
+.block__5{
+perspective: 200px;
+perspective-origin:left;
+}
+.block__item--5:hover{
+transform: rotateX(50deg);
+}
+/* 3D */
+.block__item {
+perspective: 200px;
+}
+.block__item--6:hover {
+
+transform: rotate3d(5, 15, 19, -40deg) translate3d(20px, 20px, 120px) scale3d(0.4, 0.7, 0.5);
+}
+.block__7 {
+perspective: 500px;
+transform-style: preserve-3d;
+}
+.block__item--7:hover {
+transform: rotateX(-70deg);
+transition: all 0.3s ease 0s;
+}
+
+.block__8 {
+perspective: 500px;
+transform-style: flat;
+}
+.block__item--8:hover {
+transform: rotateY(50deg);
+}
+.block__9 {
+perspective: 500px;
+transform-style: flat;
+}
+.block__item--9 {
+transition: all 0.9s;
+}
+
+.block__9:hover .block__item--9 {
+transform: rotateY(180deg); 
+}
+
+/* Flip */
+
+
+.block__10 {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	perspective: 500px;
+}
+.block__item--10front,
+.block__item--10back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	transition: all 0.3s;
+}
+.block__item--10front {
+	transform: rotateY(0deg);
+
+	backface-visibility: hidden;
+}
+.block__item--10back {
+	background-color: #64c438;
+	transform: rotateY(-180deg);
+}
+
+.block__10:hover .block__item--10back {
+	transform: rotateY(0deg);
+}
+.block__10:hover .block__item--10front {
+	transform: rotateY(180deg);
+}
+/* Moon */
+
+.round__item {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+background-color: rgb(0, 0, 0);
+display: inline-block;
+}
+.round__item--1 {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+background-color: rgba(8, 5, 5, 0.689);
+display: inline-block;
+
+}
+.round__item--1:hover{
+background-color: white;
+transition: 0.7s;
+transform: translate(70%, 0);
+}
+
+.round__moon-2{
+/* perspective: 300px; */
+position: relative;
+}
+.round__item-moon {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+background-color: rgb(23, 22, 22);
+}
+.round__item-moon--1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform-origin: 90px 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.round__item-moon--1:hover {
+    background-color: rgb(62, 230, 252);
+    transform: rotate(-190deg);
+    transition: 2s;
+}
+.round__item-moon--2{
+
+}
+
+/* ==================== CAR ==================== */
+
+.car{
+background: url(../img/bg.jpg)0 0/100% 100% no-repeat;
+height: 100%;
+width: 100%;
+}
+
+
+.car__container {
+	width: 900px;
+	height: 500px;	
+	
+}
+.car__main {
+	position: relative;
+ 	top: 70%;
+    left:20%;
+	display: inline-block;
+}
+.car__body{
+
+}
+.car__top {
+width: 480px;
+height: 80px;
+background: rgb(241, 120, 235);
+transform: perspective(10px) rotateX(2deg);
+position: absolute;
+top: -85px;
+left: 150px;
+}
+.car__top::before{
+content: "";
+background-color: grey;
+width: 480px;
+height: 2px;
+position: absolute;
+top: 5px;
+left: 0;
+}
+.car__top::after{
+content: "";
+width: 12px;
+height: 75px;
+background-color: rgb(171, 218, 241);
+position: relative;
+top: 17px;
+left: 0;
+border-radius: 4px;
+border: 2px solid grey;
+border-left: none;
+}
+.car__anthene{
+	display:block;
+	width: 130px;
+	height:100px;
+	border-radius:50%;
+	border-top:1px solid white;
+	position: absolute;
+	top: -80px;
+	left: 560px;
+	transform: rotate(80deg);
+}
+
+
+
+.bulb-item:nth-child(1){
+width: 7px;
+height: 25px;
+background-color: red;
+transform: translate(-3px, -5px);
+border-radius: 3px;
+border-right: 2px solid rgb(189, 185, 185);
+}
+.bulb-item:nth-child(2),
+.bulb-item:nth-child(3){
+width: 7px;
+height: 20px;
+border-left: 2px solid rgb(189, 185, 185);
+}
+
+.bulb-item:nth-child(2){
+background-color: red;
+transform: translate(795px, -40px);
+	
+}
+.bulb-item:nth-child(3){
+background-color: rgb(241, 233, 175);
+transform: translate(795px, -40px);
+}
+
+.car__window{
+
+}
+.car__window-right{
+position: absolute;
+left: 480px;
+top: -65px;
+width: 172px;
+border-bottom: 65px solid rgb(171, 218, 241);
+border-left: 0px solid transparent;
+border-right: 50px solid transparent;
+border-radius: 5px;
+}
+.car__passenger{
+position: absolute;
+top: -65px;
+left: 335px;
+width: 110px;
+height: 65px;
+}
+.car__window-middle{
+width: 150px;
+height: 65px;
+background: rgb(171, 218, 241);
+position: absolute;
+top: -65px;
+left: 320px;
+border-radius: 5px;
+overflow: hidden;
+z-index: 0;
+}
+.car__body:hover .car__window-middle{
+	transform: translateY(50px);
+	transition: all 1s ease 0s;
+}
+
+.car__window-left{
+position: absolute;
+width: 160px;
+border-bottom: 65px solid rgb(171, 218, 241);
+border-left: 50px solid transparent;
+border-right: 0px solid transparent;
+border-radius: 5px;
+left: 150px;
+top: -65px;
+}
+.car__window::after{
+content: "";
+width: 15px;
+height: 35px;
+background-color: rgb(56, 57, 57);
+position: relative;
+top: -50px;
+left: 155px;
+transform: skew(-38deg, 0deg);
+}
+
+.car__bottom {
+	width: 800px;
+	height: 100px;
+	border-radius: 195px 139px 148px 83px / 14px 12px 21px 23px;
+	background-color: rgb(241, 120, 235);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	}
+	.car__bottom::before{
+	content: "";
+	background-color: grey;
+	width: 480px;
+	height: 4px;
+	margin: 80px 160px;
+	}
+	
+	.car__bottom::after{
+	content: "";
+	background-color: grey;
+	opacity: 0.2;
+	width: 800px;
+	height: 5px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	}
+.car__floor{
+	width: 515px;
+	height: 5px;
+	position: absolute;
+	top: 100px;
+	left:150px;
+	background-color: black;
+	box-shadow: 2px 2px 16px 5px  rgba(16, 54, 244, 0.9);
+	visibility: hidden;
+}
+.car__door--1{
+width: 157px;
+height: 100px;
+border: 1px solid grey;
+border-top: none;
+position: absolute;
+top: 0px;
+left: 153px;
+}
+.car__door--1::after{
+content: "";
+width: 20px;
+height: 7px;
+background-color: rgb(160, 180, 202);
+border-radius: 3px;
+box-shadow: -1px 3px 4px 1px rgba(102, 106, 110, 0.5);
+position: relative;
+top: 13px;
+left: 10px;
+}
+
+.car__door--2{
+width: 150px;
+height: 100px;
+border: 1px solid grey;
+border-top: none;
+position: absolute;
+top: 0px;
+left: 320px;
+	
+}
+.car__door--3{
+width: 170px;
+height: 100px;
+border: 1px solid grey;
+border-top: none;
+position: absolute;
+top: 0px;
+left: 480px;
+}
+.car__door--3::after{
+content: "";
+width: 20px;
+height: 7px;
+background-color: rgb(160, 180, 202);
+border-radius: 3px;
+box-shadow: -1px 3px 4px 1px rgba(102, 106, 110, 0.5);
+position: relative;
+top: 13px;
+left: 10px;
+}
+
+.wheel-item{
+display: inline-block;
+}
+.wheel-item:nth-child(1){
+transform: translate(80px, -40px);
+}
+.wheel-item:nth-child(2){
+transform: translate(590px, -40px);
+}
+
+.wheel-item:nth-child(1),
+.wheel-item:nth-child(2){
+width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: black;
+
+}
+.wheel-item__inner{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: rgb(237, 163, 176);
+transform: translate(10px, 10px);
+outline: 3px dashed white;
+}
+.wheel-item__inner::before{
+content: "";
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: rgb(241, 120, 235);
+outline: 3px dotted black;
+transform: translate(5px, 5px);
+}
+.wheel__wrapper{
+width: 80px;
+height: 45px;
+position: absolute;
+top: -7px;
+left: -5px;
+border-radius: 130px 130px 0 0;
+background: rgb(12, 22, 38);
+}
+
+
+
+.car__bumper--1{
+transform: translate(-10px,-105px);
+}
+.car__bumper--2{
+transform: translate(780px,-120px);
+}
+.car__bumper--1,
+.car__bumper--2{
+width: 30px;
+height: 18px;
+background-color: rgb(214, 211, 211);
+border-radius: 5px;
+/* transform: translate(-10px,-105px); */
+}
+.car__bumper--1::after,
+.car__bumper--2::after{
+content: "";
+width: 30px;
+height: 7px;
+background-color: black;
+transform: translate(0, -3px);
+}
+
+.light {
+width: 50px;
+height: 150px;
+background: rgb(244, 227, 240);
+border-radius: 100% 30%;
+transform: rotate(80deg);
+filter: blur(30px);
+position: relative;
+top: -240px;
+left: 850px;
+visibility: hidden;
+  }
+
+
+.car__body:hover .light{
+	visibility: visible;
+}
+.car__body:hover .car__floor{
+	visibility: visible;
+}
+.car__anthene:hover{
+	box-shadow: 4px 2px 16px 5px  rgba(233, 215, 233, 0.9);
+
+}
