@@ -39,13 +39,13 @@ transform: scale(1.5);
 .practice__container {
     
 }
-.paractice__title {
+.practice__title {
 font-size: 35px;
 color: grey;
 margin-bottom: 20px;
 text-align: center;
 }
-.paractice__sub-title{
+.practice__sub-title{
 font-size: 25px;
 margin-bottom: 20px;
 text-align: center;
@@ -125,7 +125,7 @@ perspective: 200px;
 
 transform: rotate3d(5, 15, 19, -40deg) translate3d(20px, 20px, 120px) scale3d(0.4, 0.7, 0.5);
 }
-.block__7 {
+.block-7 {
 perspective: 500px;
 transform-style: preserve-3d;
 }
@@ -134,14 +134,14 @@ transform: rotateX(-70deg);
 transition: all 0.3s ease 0s;
 }
 
-.block__8 {
+.block-8 {
 perspective: 500px;
 transform-style: flat;
 }
 .block__item--8:hover {
 transform: rotateY(50deg);
 }
-.block__9 {
+.block-9 {
 perspective: 500px;
 transform-style: flat;
 }
@@ -149,14 +149,14 @@ transform-style: flat;
 transition: all 0.9s;
 }
 
-.block__9:hover .block__item--9 {
+.block-9:hover .block__item--9 {
 transform: rotateY(180deg); 
 }
 
 /* Flip */
 
 
-.block__10 {
+.block-10 {
 	position: relative;
 	width: 200px;
 	height: 200px;
@@ -181,10 +181,10 @@ transform: rotateY(180deg);
 	transform: rotateY(-180deg);
 }
 
-.block__10:hover .block__item--10back {
+.block-10:hover .block__item--10back {
 	transform: rotateY(0deg);
 }
-.block__10:hover .block__item--10front {
+.block-10:hover .block__item--10front {
 	transform: rotateY(180deg);
 }
 /* Moon */
