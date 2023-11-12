@@ -567,7 +567,3 @@ visibility: hidden;
 .car__body:hover .car__floor{
 	visibility: visible;
 }
-.car__anthene:hover{
-	box-shadow: 4px 2px 16px 5px  rgba(233, 215, 233, 0.9);
-
-}
