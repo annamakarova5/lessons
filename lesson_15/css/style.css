@@ -228,7 +228,7 @@ visibility: visible;
 .products {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -25px;
+	margin: 0 -25px -50px -25px;
 }
 .products__column {
 	flex-basis: 25%;
@@ -237,7 +237,8 @@ visibility: visible;
 	flex-grow: 0;
 	flex-shrink: 0;
 }
-.products__item {
+.products__column:not(:last-child){
+	margin-bottom: 50px;
 }
 .item-product {
 	display: flex;
