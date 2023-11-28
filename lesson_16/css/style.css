@@ -211,6 +211,10 @@ line-height: 1.18;
 
 
 /* Shipping radio-button via backround (url)*/
+.radio-button{
+	position: relative;
+}
+
 .radio-input{
 	position: absolute;
 	top: 0;
