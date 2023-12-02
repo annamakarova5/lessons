@@ -7,7 +7,7 @@
 /* Основні стилі */
 body {
 	font-size: 20px;
-	font-family: "Causten";
+	font-family: "Causten", sans-serif;
 	color: #3C4242;
 }
 .wrapper {
@@ -24,15 +24,14 @@ body {
 	margin: 0 auto;
 }
 
-.header {
-}
+
 .main__container {
 	display: flex;
 	flex-direction: column;
 
 }
-.page-1{
-	margin-bottom: 50px;
+.billing{
+	margin-bottom: 70px;
 }
 .billing__wrapper{
 	margin-bottom: 30px;
@@ -87,6 +86,11 @@ body {
 	flex: 1 1 auto;
 
 }
+.form__item--state svg{
+	position: relative;
+	left: -55px;
+	top: 5px;
+}
 .billing__item-details label:not(:last-child){
 	margin-bottom: 10px;
 }
@@ -96,6 +100,7 @@ body {
 }
 .form__item33{
 	flex-basis: 33.333%
+
 }
 .form__row{
 	display: flex;
@@ -253,12 +258,14 @@ line-height: 1.18;
 	margin-bottom: 50px;
 	
 }
-.payment-method__form{
+.payment-method__content{
 	border-radius: 12px;
 	background: #F6F6F6;
 	padding: 45px 48px 45px 28px;
 }
-
+.payment-method__content{
+	margin-bottom: 50px;
+}
 
 .payment-method__top {
 	margin-bottom: 30px;
@@ -333,7 +340,6 @@ line-height: 1.18;
 }
 
 .block-radio__text, .block-radio__subtext {
-	font-family: 'Causten', sans-serif;
 	color: #3C4242;
 }
 
@@ -373,7 +379,6 @@ line-height: 1.18;
 	border-radius: 8px;
 	border: 1px solid #3C4242;
 	color: #807D7E;
-	font-family: 'Causten', sans-serif;
 	font-size: 14px;
 }
 
@@ -417,26 +422,52 @@ margin-bottom: 50px;
 	gap: 42px;
 	justify-content: space-between;
 	margin-bottom: 30px;
-	/* flex: 1 0 45%; */
 	flex-wrap: wrap;
 }
+.select,
 .row__item input{
 	border-radius: 8px;
 	background: #F6F6F6;
 	padding: 18px 22px;
 	max-width: 100%;
+	color: #807D7E;
+	font-size: 16px;
+}
+.row__item__input{
+margin-top: 11px;
+
 }
 
 .info__message label,
 .row__item label{
 	margin-bottom: 10px;
 }
+
 .row__item {
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 auto;
 	flex-wrap: wrap;
 }
+.row__item--state{
+	flex: 0 0 48%;
+}
+
+.row__item__input{
+	display: inline-block;
+	width: 100%;
+	
+}
+
+/* .row__item--state{
+position: relative;
+}
+.row__item--svg{
+	position: absolute;
+	top: 55%;
+	left: 90%;
+} */
+
 .info__message{
 	display: flex;
 	flex-direction: column;

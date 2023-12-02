@@ -57,14 +57,31 @@
 									<label for="city">City*</label>
 									<input id="city" name="city" placeholder="Town / City"  required type="text">
 								</div>
-								<div class="form__item billing__item-details">
+								<div class="form__item form__item--state billing__item-details">
 									<label for="state">State*</label>
-									<input id="state" name="state" placeholder="State"  required type="text">
+									<div class="state">
+										<input id="state" name="state" placeholder="State"  required>
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+										<path d="M15 8.33333L10.5893 12.7441C10.2638 13.0695 9.73618 13.0695 9.41074 12.7441L5 8.33333" stroke="#3C4242" stroke-width="1.5" stroke-linecap="round"/>
+									  </svg>
+									</div>
+
+									<!-- exmple -->
+									<!-- <select name="state" required class="form__item form__item--state billing__item-details">
+										<option selected disabled hidden value="">State</option>
+										<option>Arizona</option>
+										<option>Washington</option>
+										<option>California</option>
+									  </select> -->
+
+
 								</div>
+								
 								<div class="form__item billing__item-details">
 									<label for="postal">Postal Code*</label>
 									<input id="postal" name="postal" placeholder="Postal Code" autocomplete="off" required type="number">
 								</div>
+							</div>
 							</div>
 							<div class="form__row form__row--phone form__item-50">
 								<div class="form__item billing__item-details">
@@ -73,9 +90,11 @@
 									
 								</div>
 							</div>
-							<div class="form__button button">
-								<p>Continue to delivery</p>
-							</div>
+							
+								<button class="form__button button">
+									Continue to delivery
+								</button>
+														
 							<div class="form__checkbox checkbox">
 								<input class="checkbox__input" id="check-save" name="save" type="checkbox">
 								<label class="checkbox__label" for="check-save">Save my information for a faster checkout</label>
@@ -140,6 +159,7 @@
 							<p class="shipping__text text">All transactions are secure and encrypted. </p>
 							<div class="payment-method__form">
 								<form action="#" method="POST" class="payment-checkout__form payment-method">
+									<div class="payment-method__content">
 									<div class="payment-method__top">
 										<div class="payment-method__radio-block block-radio">
 											<input id="by-card" name="payment-type" type="radio" class="block-radio__input" checked>
@@ -177,7 +197,7 @@
 														placeholder="Expiration date (MM/YY)" autocomplete="off" required>
 												</div>
 												<div class="payment-method__field payment-method__field--security">
-													<input id="card-cvv" name="card-cvv" type="text"
+													<input id="card-cvv" name="card-cvv" type="password"
 														class="payment-method__input payment-method__input--security" placeholder="Security Code" autocomplete="off"
 														required>
 													<button type="button" class="payment-method__button">
@@ -209,13 +229,17 @@
 										<input id="paypal" name="payment-type" type="radio" class="block-radio__input">
 										<label for="paypal" class="block-radio__label block-radio__text">Paypol</label>
 									</div>
+									
+									</div>
+									<button type="submit" class="button button-pay">
+										Pay Now
+									</button>
 								</form>
 							</div>
-							<!-- </div> -->
+							
+						
 						</div>
-						<button type="submit" class="button button-pay">
-							Pay Now
-						</button>
+						
 					</div>
 					
 					</div>
@@ -256,14 +280,27 @@
 									<input id="suite" name="suite" placeholder="apartment, suite, unit, etc. (optional)"   type="text">
 								</div>
 							</div>
-							<div class="info__row row">
+							<div class="info__row row ">
 								<div class="row__item">
 									<label for="town">City*</label>
 									<input id="town" name="town" placeholder="Town / City" required  type="text">
 								</div>
-								<div class="row__item">
-									<label for="state-number">State*</label>
-									<input id="state-number" name="state-number" placeholder="State" required  type="text">
+								<div class="row__item row__item--state">
+									<label for="state-number">State*
+										<select name="state-number" required class="row__item__input select">
+											<option selected disabled hidden value="">State</option>
+											<option>Michigan</option>
+											<option>New York</option>
+											<option>Miami</option>
+										  </select>
+									</label>
+									
+										<!-- <input id="state-number" name="state-number" placeholder="State" required  type="text"> -->
+										
+										<!-- <svg class="row__item--svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+											<path d="M15 8.33333L10.5893 12.7441C10.2638 13.0695 9.73618 13.0695 9.41074 12.7441L5 8.33333" stroke="#3C4242" stroke-width="1.5" stroke-linecap="round"/>
+									  </svg> -->									
+								
 								</div>
 							</div>
 							<div class="info__row row">
@@ -290,12 +327,12 @@
 									<label class="checkbox__label" for="check-2">Set as default billing address</label>
 								</div>
 							</div>
-							</form>
+							
 							<div class="info__buttons">
 								<button class="button info__buton--1" type="submit">Save</button>
 								<button class="info__buton--2" type="reset">Cancel</button>
 							</div>
-						
+						</form>
 						</div>
 					
 					</div>
@@ -314,7 +351,7 @@
 							<form action="#" id="contact-form" class="contact-form">
 								<div class="contact__row">
 									<input class="contact__item"  name="fn" type="text" placeholder="Your Name">
-									<input class="contact__item"  name="address" type="text" placeholder="Email Address">
+									<input class="contact__item"  name="address" type="email" placeholder="Email Address">
 								</div>
 								<div class="contact__row">
 									<input class="contact__item"  name="fn" type="text" placeholder="Phone Number">
