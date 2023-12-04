@@ -132,7 +132,7 @@ section:not(:last-child){
 text-align: center;
 margin-bottom: 50px;
 }
-.page-2__container:not(:last-child){
+.page-2__items:not(:last-child){
 	margin-bottom: 76px;
 }
 .page-2__title:not(:last-child){
