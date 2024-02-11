@@ -1,0 +1,90 @@
+@use "sass:math";
+
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_my-library.scss";
+@import "_functions.scss";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $main-color;
+    line-height: 1.46;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper > main {
+    flex-grow: 1;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"] {
+    max-width: toRem(1250);
+    padding: 0 toRem(15);
+    margin: 0 auto;
+}
+//  ======================================================
+.header{
+    height: toRem(49);
+    background-color: $black-color;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: toRem(32);
+    padding: toRem(10);
+    border-radius: toRem(5);
+    border: 2px solid $black-color;
+    transition: transform 0.3s;
+                @media(any-hover: hover){
+                    &:hover {
+                        transform: scale(1.2); 
+                        color:$mint-color;
+                        border: 2px solid $mint-color;
+                    }
+                }
+
+
+
+
+
+}
+.footer{
+    height: toRem(49);
+    background-color: $black-color;
+}
+
+
+
+
+//  ======================= SECTION FOOTER =========
